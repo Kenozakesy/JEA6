@@ -1,4 +1,7 @@
 
+import Classes.WireMockClasses.Company;
+import Classes.WireMockClasses.Contractor;
+import Classes.WireMockClasses.JavaDeveloper;
 import Classes.person;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
@@ -49,7 +52,7 @@ public class personTest  {
     //these test dont work
     @Test
     //@RunWith(person.class)
-    protected void GetPersonTest() {
+    public void GetPersonTest() {
         given()
         .when()
         .get("/HomeController/people")
